@@ -8,7 +8,8 @@
     "start": "next start",
     "format": "npx prettier --write .",
     "eslint": "npx eslint -c eslint.config.mjs",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "next": "15.1.2",
@@ -28,11 +29,20 @@
     "eslint-plugin-prettier": "^5.2.1",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-tailwindcss": "^3.17.5",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.3.0",
     "postcss": "^8",
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.9",
     "tailwindcss": "^3.4.1",
     "typescript": "^5",
     "typescript-eslint": "^8.20.0"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
+
 }
