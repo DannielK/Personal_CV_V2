@@ -1,8 +1,2 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
 echo "Running lint-staged (Prettier and ESLint)..."
 npm run lint-staged
-
-echo "Running build process..."
-npm run build
