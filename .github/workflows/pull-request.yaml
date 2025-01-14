@@ -8,41 +8,26 @@ jobs:
   format:
     name: Formatting
     runs-on: ubuntu-latest
+    uses: ./.github/workflows/common-setup.yaml
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-        
-      - name: Call Common Setup
-        uses: ./.github/workflows/common-setup.yaml
-
       - name: Check Formatting
         run: npm run format
 
   lint:
     name: Linting
     runs-on: ubuntu-latest
+    uses: ./.github/workflows/common-setup.yaml
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Call Common Setup
-        uses: ./.github/workflows/common-setup.yaml
-
       - name: Run Linting
         run: npm run lint
 
   build:
     name: Build
     runs-on: ubuntu-latest
+    uses: ./.github/workflows/common-setup.yaml
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Call Common Setup
-        uses: ./.github/workflows/common-setup.yaml
-
       - name: Build Project
         run: npm run build
