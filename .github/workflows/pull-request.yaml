@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Call Common Setup
         uses: ./.github/workflows/common-setup.yaml@main
+        with:
+          jobs: setup
 
       - name: Check Formatting
         run: npm run format
@@ -23,6 +25,8 @@ jobs:
     steps:
       - name: Call Common Setup
         uses: ./.github/workflows/common-setup.yaml@main
+        with:
+          jobs: setup
 
       - name: Run Linting
         run: npm run lint
@@ -34,6 +38,8 @@ jobs:
     steps:
       - name: Call Common Setup
         uses: ./.github/workflows/common-setup.yaml@main
+        with:
+          jobs: setup
 
       - name: Build Project
         run: npm run build
