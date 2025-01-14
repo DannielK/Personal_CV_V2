@@ -1,4 +1,2 @@
-#!/usr/bin/env sh
-
 echo "Running lint-staged (Prettier and ESLint)..."
 npm run lint-staged
