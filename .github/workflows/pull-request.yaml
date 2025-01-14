@@ -7,30 +7,18 @@ on:
 jobs:
   format:
     name: Formatting
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Call Common Setup for Formatting
-        uses: ./.github/workflows/common-setup.yaml
-        with:
-          task: format
+    uses: ./.github/workflows/common-setup.yaml
+    with:
+      task: format
 
   lint:
     name: Linting
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Call Common Setup for Linting
-        uses: ./.github/workflows/common-setup.yaml
-        with:
-          task: lint
+    uses: ./.github/workflows/common-setup.yaml
+    with:
+      task: lint
 
   build:
     name: Build
-    runs-on: ubuntu-latest
-    
-    steps:
-      - name: Call Common Setup for Building
-        uses: ./.github/workflows/common-setup.yaml
-        with:
-          task: build
+    uses: ./.github/workflows/common-setup.yaml
+    with:
+      task: build
