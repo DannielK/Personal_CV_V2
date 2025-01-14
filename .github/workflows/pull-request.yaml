@@ -9,25 +9,19 @@ jobs:
     name: Formatting
     runs-on: ubuntu-latest
     uses: ./.github/workflows/common-setup.yaml
-
-    steps:
-      - name: Check Formatting
-        run: npm run format
+    with:
+      task: format
 
   lint:
     name: Linting
     runs-on: ubuntu-latest
     uses: ./.github/workflows/common-setup.yaml
-
-    steps:
-      - name: Run Linting
-        run: npm run lint
+    with:
+      task: lint
 
   build:
     name: Build
     runs-on: ubuntu-latest
     uses: ./.github/workflows/common-setup.yaml
-
-    steps:
-      - name: Build Project
-        run: npm run build
+    with:
+      task: build
