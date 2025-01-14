@@ -1,1 +1,2 @@
+echo "Running lint-staged (Prettier and ESLint)..."
 npm run lint-staged
