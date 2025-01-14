@@ -9,7 +9,8 @@
     "format": "npx prettier --write .",
     "eslint": "npx eslint -c eslint.config.mjs",
     "lint": "next lint",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "prepare": "husky install"
   },
   "dependencies": {
     "next": "15.1.2",
@@ -44,5 +45,4 @@
       "npm run format"
     ]
   }
-
 }
