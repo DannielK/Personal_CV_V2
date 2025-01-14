@@ -10,9 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        
       - name: Call Common Setup
-        with:
-          jobs: setup
+        uses: ./.github/workflows/common-setup.yaml
 
       - name: Check Formatting
         run: npm run format
@@ -22,9 +24,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
       - name: Call Common Setup
-        with:
-          jobs: setup
+        uses: ./.github/workflows/common-setup.yaml
 
       - name: Run Linting
         run: npm run lint
@@ -34,9 +38,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
       - name: Call Common Setup
-        with:
-          jobs: setup
+        uses: ./.github/workflows/common-setup.yaml
 
       - name: Build Project
         run: npm run build
