@@ -41,8 +41,7 @@ const Socials = () => {
           <Image
             src={icon}
             alt={name}
-            layout="intrinsic"
-            className="opacity-50 hover:opacity-100"
+            className="aspect-square opacity-50 hover:opacity-100"
           />
         </a>
       ))}
