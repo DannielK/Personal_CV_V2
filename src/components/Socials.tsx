@@ -1,23 +1,26 @@
-import Image from "next/image";
+"use client";
 
-import Github from "@/public/socials/github-brands-solid.svg";
-import LinkedIn from "@/public/socials/linkedin-brands-solid.svg";
-import Email from "@/public/socials/envelope-regular.svg";
-import Instagram from "@/public/socials/instagram-brands-solid.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 // Socials data
 const socials = [
-  { name: "Github", href: "https://github.com/DannielK", icon: Github },
+  { name: "Github", href: "https://github.com/DannielK", icon: faGithub },
   {
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/danniel-kim/",
-    icon: LinkedIn,
+    icon: faLinkedin,
   },
-  { name: "Email", href: "mailto:dannykm003@gmail.com", icon: Email },
+  { name: "Email", href: "mailto:dannykm003@gmail.com", icon: faEnvelope },
   {
     name: "Instagram",
     href: "https://www.instagram.com/dann.kimchi/",
-    icon: Instagram,
+    icon: faInstagram,
   },
 ];
 
@@ -38,10 +41,9 @@ const Socials = () => {
           title={name}
           className="flex h-6 w-6 items-center justify-center"
         >
-          <Image
-            src={icon}
-            alt={name}
-            className="aspect-square opacity-50 hover:opacity-100"
+          <FontAwesomeIcon
+            icon={icon}
+            className="size-auto transition-colors duration-200 hover:text-slate-200"
           />
         </a>
       ))}
