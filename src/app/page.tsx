@@ -1,4 +1,5 @@
 import Experience from "@/components/Experience";
+import FullResumeButton from "@/components/ResumeButton";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <section id="experience" className="h-screenborder-2 border-green-500">
         EXPERIENCE
         <Experience />
+        <FullResumeButton />
       </section>
       <section
         id="projects"
