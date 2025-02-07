@@ -7,8 +7,7 @@ export default function Home() {
       <section id="about" className="h-screen w-1/2 border-2 border-red-500">
         ABOUT
       </section>
-      <section id="experience" className="h-screenborder-2 border-green-500">
-        EXPERIENCE
+      <section id="experience" className="h-screen">
         <Experience />
         <FullResumeButton />
       </section>
