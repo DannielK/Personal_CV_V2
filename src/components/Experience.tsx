@@ -27,8 +27,12 @@ const Experience = () => {
           }`}
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
+          onFocus={() => setHoveredIndex(index)}
+          onBlur={() => setHoveredIndex(null)}
         >
-          <li className="group relative mb-10 grid grid-cols-8 gap-4 rounded-md p-4 backdrop-blur-sm transition-all hover:bg-slate-800/50 hover:drop-shadow-lg hover:backdrop-blur-md">
+          <li
+            className={`group relative mb-10 grid grid-cols-8 gap-4 rounded-md p-4 backdrop-blur-sm transition-all ${hoveredIndex === index ? "bg-slate-800/50 drop-shadow-lg backdrop-blur-md" : ""}`}
+          >
             <header
               className="col-span-2 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500"
               aria-label={`${experience.duration}`}
