@@ -4,6 +4,10 @@ export const EXPERIENCES = [
     company: "Company A",
     duration: "2020 - 2021",
     link: "https://www.company-a.com",
+    addtlLink: {
+      GitHub: "https://www.github.com/company-a",
+      NPM: "https://www.npmjs.com/company-a",
+    },
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Nullam nec libero nec libero ultricies ultricies. Nullam nec libero nec libero ultricies ultricies.",
     skills: ["React", "TypeScript", "Node.js"],
@@ -13,6 +17,7 @@ export const EXPERIENCES = [
     company: "Company B",
     duration: "2019 - 2020",
     link: "https://www.company-b.com",
+    addtlLink: {},
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Nullam nec libero nec libero ultricies ultricies. Nullam nec libero nec libero ultricies ultricies.",
     skills: ["React", "JavaScript", "HTML", "CSS"],
@@ -22,6 +27,7 @@ export const EXPERIENCES = [
     company: "Company C",
     duration: "2018 - 2019",
     link: "https://www.company-c.com",
+    addtlLink: {},
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Nullam nec libero nec libero ultricies ultricies. Nullam nec libero nec libero ultricies ultricies.",
     skills: ["JavaScript", "HTML", "CSS"],
@@ -31,6 +37,7 @@ export const EXPERIENCES = [
     company: "Company D",
     duration: "2017 - 2018",
     link: "https://www.company-d.com",
+    addtlLink: {},
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Nullam nec libero nec libero ultricies ultricies. Nullam nec libero nec libero ultricies ultricies.",
     skills: ["HTML", "CSS"],

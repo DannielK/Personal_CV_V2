@@ -1,6 +1,7 @@
 "use client";
 
 import SkillList from "./SkillList";
+import AddtlLinks from "./AddtlLinks";
 import { EXPERIENCES } from "@/data/experience";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -25,6 +26,7 @@ const Experience = () => {
               ? "opacity-50"
               : "opacity-100"
           }`}
+          // Add hover effects onto specific experience items
           onMouseEnter={() => setHoveredIndex(index)}
           onMouseLeave={() => setHoveredIndex(null)}
           onFocus={() => setHoveredIndex(index)}
@@ -55,6 +57,17 @@ const Experience = () => {
               <p className="mt-2 text-sm leading-normal">
                 {experience.description}
               </p>
+              {/* Render additional links if they exist */}
+              {Object.keys(experience.addtlLink).length > 0 && (
+                <AddtlLinks
+                  links={Object.fromEntries(
+                    Object.entries(experience.addtlLink).filter(
+                      ([_, link]) => link !== undefined,
+                    ),
+                  )}
+                />
+              )}
+              {/* Render skills list */}
               <SkillList skills={experience.skills} />
             </div>
           </li>
