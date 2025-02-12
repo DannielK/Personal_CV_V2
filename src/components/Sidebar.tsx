@@ -14,7 +14,7 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="sticky top-0 flex max-h-screen w-[48%] flex-col justify-between border-2 border-red-500 py-24">
+    <aside className="sticky top-0 flex max-h-screen w-[48%] flex-col justify-between py-24">
       <div className="max-w-fit">
         <h1 className="text-5xl font-bold tracking-tight text-slate-200">
           <a href="/" onClick={handleScrollToTop}>
