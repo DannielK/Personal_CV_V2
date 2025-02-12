@@ -1,11 +1,12 @@
 import Experience from "@/components/Experiences";
 import FullResumeButton from "@/components/ResumeButton";
 import Project from "@/components/Projects";
+import FullProjectArchiveButton from "@/components/ProjectArchiveButton";
 
 export default function Home() {
   return (
     <div className="">
-      <section id="about" className="h-screen w-1/2 border-2 border-red-500">
+      <section id="about" className="h-screen w-full border-2 border-red-500">
         ABOUT
       </section>
       <section
@@ -22,6 +23,7 @@ export default function Home() {
         aria-label="Selected Projects"
       >
         <Project />
+        <FullProjectArchiveButton />
       </section>
     </div>
   );
