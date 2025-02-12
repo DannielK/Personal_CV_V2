@@ -2,25 +2,26 @@
 
 import SkillList from "./SkillList";
 import AddtlLinks from "./AddtlLinks";
-import { EXPERIENCES } from "@/data/experience";
+import { PROJECTS } from "@/data/projects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
+import Image from "next/image";
 
-const Experience = () => {
+const Project = () => {
   // State to track which experience item is being hovered
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <ol className="relative">
       {/* Map through the EXPERIENCES array to dynamically generate experience items */}
-      {EXPERIENCES.map((experience, index) => (
+      {PROJECTS.map((project, index) => (
         <a
           key={index}
-          href={`${experience.link}`}
+          href={`${project.link}`}
           target="_blank"
           rel="noreferrer noopener"
-          aria-label={`${experience.title} at ${experience.company} (opens in a new tab)`}
+          aria-label={`${project.title} (opens in a new tab)`}
           className={`transition-all duration-100 ${
             hoveredIndex !== null && hoveredIndex !== index
               ? "opacity-50"
@@ -35,40 +36,38 @@ const Experience = () => {
           <li
             className={`group relative mb-10 grid grid-cols-8 gap-4 rounded-md p-4 backdrop-blur-sm transition-all ${hoveredIndex === index ? "bg-slate-800/50 drop-shadow-lg backdrop-blur-md" : ""}`}
           >
-            <header
-              className="col-span-2 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500"
-              aria-label={`${experience.duration}`}
-            >
-              {experience.duration}
-            </header>
+            <Image
+              src={project.previewPhoto}
+              alt={`${project.title} Preview Card`}
+              width="200"
+              height="48"
+              className={`col-span-2 aspect-video translate-y-1 rounded border-2 border-slate-200/10 object-cover ${hoveredIndex === index ? "border-slate-200/30" : ""}`}
+            />
             <div className="col-span-6">
               <h3
                 className={`inline-flex items-baseline font-medium leading-snug text-slate-200 transition-colors duration-100 ${hoveredIndex === index ? "text-teal-300" : ""}`}
               >
-                <span>
-                  {experience.title} ·{" "}
-                  <span className="inline-block">{experience.company}</span>
-                </span>
+                <span>{project.title}</span>
                 <FontAwesomeIcon
                   icon={faArrowRight}
                   className={`ml-2 inline-block size-3 shrink-0 -rotate-45 transition-transform ${hoveredIndex === index ? "-translate-y-1 translate-x-1" : ""}`}
                 />
               </h3>
               <p className="mt-2 text-sm leading-normal">
-                {experience.description}
+                {project.description}
               </p>
               {/* Render additional links if they exist */}
-              {Object.keys(experience.addtlLink).length > 0 && (
+              {Object.keys(project.addtlLinks).length > 0 && (
                 <AddtlLinks
                   links={Object.fromEntries(
-                    Object.entries(experience.addtlLink).filter(
+                    Object.entries(project.addtlLinks).filter(
                       ([_, link]) => link !== undefined,
                     ),
                   )}
                 />
               )}
               {/* Render skills list */}
-              <SkillList skills={experience.skills} />
+              <SkillList skills={project.skills} />
             </div>
           </li>
         </a>
@@ -77,4 +76,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Project;

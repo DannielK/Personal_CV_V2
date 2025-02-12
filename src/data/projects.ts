@@ -1,45 +1,41 @@
-export const EXPERIENCES = [
+export const PROJECTS = [
   {
-    title: "Software Engineer",
-    company: "Company A",
-    duration: "2020 - 2021",
-    link: "https://www.company-a.com",
-    addtlLink: {
-      GitHub: "https://www.github.com/company-a",
-      NPM: "https://www.npmjs.com/company-a",
-    },
+    title: "Project A",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Nullam nec libero nec libero ultricies ultricies. Nullam nec libero nec libero ultricies ultricies.",
     skills: ["React", "TypeScript", "Node.js"],
+    link: "https://www.project-a.com",
+    addtlLinks: {
+      GitHub: "https://www.github.com/project-a",
+      NPM: "https://www.npmjs.com/project-a",
+    },
+    previewPhoto: "/webp-example.webp",
   },
   {
-    title: "Frontend Developer",
-    company: "Company B",
-    duration: "2019 - 2020",
-    link: "https://www.company-b.com",
-    addtlLink: {},
+    title: "Project B",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Nullam nec libero nec libero ultricies ultricies. Nullam nec libero nec libero ultricies ultricies.",
     skills: ["React", "JavaScript", "HTML", "CSS"],
+    link: "https://www.project-b.com",
+    addtlLinks: {},
+    previewPhoto: "/webp-example.webp",
   },
   {
-    title: "Web Developer",
-    company: "Company C",
-    duration: "2018 - 2019",
-    link: "https://www.company-c.com",
-    addtlLink: {},
+    title: "Project C",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Nullam nec libero nec libero ultricies ultricies. Nullam nec libero nec libero ultricies ultricies.",
     skills: ["JavaScript", "HTML", "CSS"],
+    link: "https://www.project-c.com",
+    addtlLinks: {},
+    previewPhoto: "/webp-example.webp",
   },
   {
-    title: "Intern",
-    company: "Company D",
-    duration: "2017 - 2018",
-    link: "https://www.company-d.com",
-    addtlLink: {},
+    title: "Project D",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc. Nullam nec libero nec libero ultricies ultricies. Nullam nec libero nec libero ultricies ultricies.",
     skills: ["HTML", "CSS"],
+    link: "https://www.project-d.com",
+    addtlLinks: {},
+    previewPhoto: "/webp-example.webp",
   },
 ];
