@@ -11,6 +11,8 @@ const Sidebar = () => {
     // Prevent the default anchor behavior.
     event.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
+    // Set the link address back to "/".
+    window.history.pushState(null, "", "/");
   };
 
   return (
@@ -25,7 +27,8 @@ const Sidebar = () => {
           Software Engineer
         </h2>
         <p className="mt-4 max-w-xs leading-normal">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Focused on building reliable, efficient, and maintainable software
+          with a problem-solving mindset.
         </p>
         <Navbar />
       </div>
