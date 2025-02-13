@@ -33,15 +33,15 @@ const Experience = () => {
           onBlur={() => setHoveredIndex(null)}
         >
           <li
-            className={`group relative mb-10 grid grid-cols-8 gap-4 rounded-md p-4 backdrop-blur-sm transition-all ${hoveredIndex === index ? "bg-slate-800/50 drop-shadow-lg backdrop-blur-md" : ""}`}
+            className={`group relative mb-10 grid gap-4 rounded-md pb-1 backdrop-blur-sm transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:p-4 ${hoveredIndex === index ? "bg-slate-800/50 drop-shadow-lg backdrop-blur-md" : ""}`}
           >
             <header
-              className="col-span-2 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500"
+              className="mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2"
               aria-label={`${experience.duration}`}
             >
               {experience.duration}
             </header>
-            <div className="col-span-6">
+            <div className="sm:col-span-6">
               <h3
                 className={`inline-flex items-baseline font-medium leading-snug text-slate-200 transition-colors duration-100 ${hoveredIndex === index ? "text-teal-300" : ""}`}
               >
