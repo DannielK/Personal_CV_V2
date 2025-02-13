@@ -34,16 +34,16 @@ const Project = () => {
           onBlur={() => setHoveredIndex(null)}
         >
           <li
-            className={`group relative mb-10 grid grid-cols-8 gap-4 rounded-md p-4 backdrop-blur-sm transition-all ${hoveredIndex === index ? "bg-slate-800/50 drop-shadow-lg backdrop-blur-md" : ""}`}
+            className={`group relative mb-10 grid gap-4 rounded-md pb-1 backdrop-blur-sm transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:p-4 ${hoveredIndex === index ? "bg-slate-800/50 drop-shadow-lg backdrop-blur-md" : ""}`}
           >
             <Image
               src={project.previewPhoto}
               alt={`${project.title} Preview Card`}
               width="200"
               height="48"
-              className={`col-span-2 aspect-video translate-y-1 rounded border-2 border-slate-200/10 object-cover ${hoveredIndex === index ? "border-slate-200/30" : ""}`}
+              className={`order-2 aspect-video rounded border-2 border-slate-200/10 object-cover sm:order-1 sm:col-span-2 sm:translate-y-1 ${hoveredIndex === index ? "border-slate-200/30" : ""}`}
             />
-            <div className="col-span-6">
+            <div className="order-1 sm:order-2 sm:col-span-6">
               <h3
                 className={`inline-flex items-baseline font-medium leading-snug text-slate-200 transition-colors duration-100 ${hoveredIndex === index ? "text-teal-300" : ""}`}
               >
