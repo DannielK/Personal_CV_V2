@@ -39,11 +39,11 @@ const Socials = () => {
           rel="noopener noreferrer"
           aria-label={`${name} (opens in a new tab)`}
           title={name}
-          className="flex h-6 w-6 items-center justify-center"
+          className="flex size-6 items-center justify-center"
         >
           <FontAwesomeIcon
             icon={icon}
-            className="size-auto transition-colors duration-200 hover:text-slate-200"
+            className="size-auto max-h-full max-w-full transition-colors duration-200 hover:text-slate-200"
           />
         </a>
       ))}
