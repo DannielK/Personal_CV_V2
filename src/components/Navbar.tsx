@@ -47,7 +47,7 @@ const Navbar = () => {
   }, []); // Empty dependency array ensures this effect runs only once on mount
 
   return (
-    <nav className="mt-16 block w-max" aria-label="Main navigation">
+    <nav className="mt-16 hidden w-max lg:block" aria-label="Main navigation">
       {/* Map through the sections array to dynamically create navbar links */}
       {sections.map((id) => (
         <Link

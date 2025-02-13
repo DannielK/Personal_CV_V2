@@ -16,9 +16,9 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="sticky top-0 flex max-h-screen w-[48%] flex-col justify-between py-24">
+    <aside className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24">
       <div className="max-w-fit">
-        <h1 className="text-5xl font-bold tracking-tight text-slate-200">
+        <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
           <a href="/" onClick={handleScrollToTop}>
             Danniel Kim
           </a>
