@@ -8,7 +8,7 @@ export const EXPERIENCES = [
       "Hackathon Core": "https://github.com/acm-ucr/hackathon-website",
     },
     description:
-      "As a Full-Stack Developer for ACM@UCR, I collaborated with a cross-functional team to build a hackathon platform supporting over 1,000 users. I refactored the codebase from JavaScript to TypeScript, implemented ESLint for improved code quality, and increased test coverage, resulting in more maintainable and reliable software. My focus was on delivering efficient solutions that enhanced the user experience and streamlined development workflows.",
+      "As a Full-Stack Developer for ACM@UCR, I helped build a hackathon platform for over 1,000 users. I refactored the codebase from JavaScript to TypeScript, implemented ESLint for better code quality, and increased test coverage to reduce bugs and improve software reliability.",
     skills: [
       "Next.js",
       "Node.js",
@@ -28,7 +28,7 @@ export const EXPERIENCES = [
     link: "https://www.kcomputerrepairoc.com/",
     addtlLinks: {},
     description:
-      "As an IT Specialist and Computer Technician at Kaddy’s Computer Repair and IT Service, I diagnosed and resolved over 200 cybersecurity threats, including malware and ransomware, while recovering over 500GB of lost data. I also developed Bash scripts to streamline software maintenance, improving operational efficiency, and worked collaboratively with the team to ensure accurate inventory management and timely service delivery.",
+      "At Kaddy’s Computer Repair, I resolved over 200 cybersecurity threats, recovered 500GB+ of lost data, and wrote Bash scripts to automate software maintenance. I also managed inventory records to ensure timely restocking and efficient service.",
     skills: [
       "Bash",
       "Trello",
@@ -45,7 +45,7 @@ export const EXPERIENCES = [
     link: "https://www.uscyberpatriot.org/",
     addtlLinks: {},
     description:
-      "As Team Captain and Competitor for AFA CyberPatriot, I led my team to become Platinum Division finalists, where we competed across multiple operating systems like Windows and Linux. I restored OS images riddled with cybersecurity threats and mentored my peers in troubleshooting and securing systems, fostering a collaborative and structured learning environment that improved our overall team performance.",
+      "As Team Captain for AFA CyberPatriot, I led my team to become Platinum Division finalists. I secured and restored Windows and Linux OS images from cybersecurity threats and mentored teammates in troubleshooting and system security.",
     skills: ["Bash", "Cybersecurity", "IT", "Shell Scripting"],
   },
   {
@@ -55,7 +55,7 @@ export const EXPERIENCES = [
     link: "https://www.stemup4youth.org/",
     addtlLinks: {},
     description:
-      "As a Volunteer Leader for STEMup4Youth, I facilitated over 30 hands-on learning experiences for underprivileged youth, helping them engage with and understand science concepts. I also led a team of volunteers, fostering a collaborative environment that enhanced the educational experience and contributed to the development of sustainable STEM materials for future programs.",
+      "As a Volunteer Leader for STEMup4Youth, I led over 30 hands-on STEM activities for underprivileged youth and supervised a team of volunteers. I also helped create educational materials to support the sustainability of the program’s initiatives.",
     skills: ["Leadership"],
   },
 ];

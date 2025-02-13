@@ -16,7 +16,7 @@ const socials = [
     href: "https://www.linkedin.com/in/danniel-kim/",
     icon: faLinkedin,
   },
-  { name: "Email", href: "mailto:dannykm003@gmail.com", icon: faEnvelope },
+  { name: "Email", href: "mailto:dannielkim.cs@gmail.com", icon: faEnvelope },
   {
     name: "Instagram",
     href: "https://www.instagram.com/dann.kimchi/",

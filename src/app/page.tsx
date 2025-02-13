@@ -1,7 +1,7 @@
 import Experience from "@/components/Experiences";
 import FullResumeButton from "@/components/ResumeButton";
 import Project from "@/components/Projects";
-import FullProjectArchiveButton from "@/components/ProjectArchiveButton";
+// import FullProjectArchiveButton from "@/components/ProjectArchiveButton";
 
 export default function Home() {
   return (
@@ -47,7 +47,7 @@ export default function Home() {
         aria-label="Selected Projects"
       >
         <Project />
-        <FullProjectArchiveButton />
+        {/* <FullProjectArchiveButton /> */}
       </section>
     </div>
   );
