@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import { ReactNode } from "react";
 import Sidebar from "@/components/Sidebar";
 import Content from "@/components/Content";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -26,7 +27,10 @@ export default function RootLayout({
       >
         <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-16 lg:flex lg:justify-between lg:gap-4 lg:py-0">
           <Sidebar />
-          <Content>{children}</Content>
+          <Content>
+            {children}
+            <Analytics />
+          </Content>
         </div>
       </body>
     </html>
