@@ -15,7 +15,7 @@ export const PROJECTS = [
     ],
     link: "https://www.youtube.com/watch?v=X93dlakq2KQ",
     addtlLinks: {
-      "Live App": "https://www.youtube.com/watch?v=X93dlakq2KQ",
+      "Live App": "https://cs179-cargo-flow.vercel.app/",
       Submission: "https://cs179-cargo-flow.vercel.app/submission",
     },
     previewPhoto: "/project_previews/CargoFlow Thumbnail.png",
