@@ -5,6 +5,7 @@ import { ReactNode } from "react";
 import Sidebar from "@/components/Sidebar";
 import Content from "@/components/Content";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -30,6 +31,7 @@ export default function RootLayout({
           <Content>
             {children}
             <Analytics />
+            <SpeedInsights />
           </Content>
         </div>
       </body>
