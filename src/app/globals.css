@@ -67,7 +67,8 @@ html:not(:root) {
 
 /* Start of Animated Name */
 @keyframes float {
-  from, to {
+  from,
+  to {
     transform: translateY(-0%);
   }
 
@@ -95,7 +96,7 @@ html:not(:root) {
   transform-origin: center;
   font-size: 1em;
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.75);
-    border-radius: 9999px;
+  border-radius: 9999px;
 }
 
 #name:hover::before {
@@ -127,7 +128,7 @@ html:not(:root) {
 }
 
 #name > .outer {
-  transition:transform 350ms ease;
+  transition: transform 350ms ease;
 }
 
 #name:hover > .outer {
@@ -139,12 +140,7 @@ html:not(:root) {
 }
 
 #name:hover > .outer > .inner > .letter {
-  background: linear-gradient(
-    to right,
-    #3b82f6,
-    #22c55e,
-    #3b82f6
-  );
+  background: linear-gradient(to right, #3b82f6, #22c55e, #3b82f6);
   background-size: 1000%;
   background-clip: text;
   -webkit-background-clip: text;
