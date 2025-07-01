@@ -1,8 +1,23 @@
 export const EXPERIENCES = [
   {
+    title: "AI Safety and Training Specialist",
+    company: "Sepal AI",
+    duration: "Apr 2024 - Present",
+    link: "https://www.sepalai.com/",
+    addtlLinks: {},
+    description:
+      "Conducted structured prompt testing and behavioral evaluations of large language models to assess instruction-following accuracy, ethical compliance, and output formatting. Provided written feedback and documentation to guide model improvements and internal research.",
+    skills: [
+      "Prompt Engineering",
+      "LLM Training",
+      "Quality Assurance",
+      "Data Annotation",
+    ],
+  },
+  {
     title: "Full-Stack Developer",
     company: "ACM@UCR",
-    duration: "Jan 2024 - Present",
+    duration: "Jan 2024 - Mar 2025",
     link: "https://acm.cs.ucr.edu/",
     addtlLinks: {
       "Hackathon Core": "https://github.com/acm-ucr/hackathon-website",
