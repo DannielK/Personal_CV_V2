@@ -17,11 +17,6 @@ const socials = [
     icon: faLinkedin,
   },
   { name: "Email", href: "mailto:dannielkim.cs@gmail.com", icon: faEnvelope },
-  {
-    name: "Instagram",
-    href: "https://www.instagram.com/dann.kimchi/",
-    icon: faInstagram,
-  },
 ];
 
 const Socials = () => {
